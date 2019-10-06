@@ -1,0 +1,40 @@
+.defaultText {
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 32;
+}
+
+#status {
+  font-family: System-Regular;
+  font-weight: regular;
+  text-overflow: ellipsis;
+  text-anchor: middle;
+  display-align: center;
+  width: 90%;
+  height: 90%;
+  text-length:512;
+  font-size: 32;
+  fill: white;
+}
+
+.add_text {
+  font-family: "System-Regular";
+  font-weight: "bold";
+  pointer-events: "visible";
+  text-anchor: "middle";
+}
+
+.amount_text {
+  fill: white;
+  text-length: 20;
+  text-transform: uppercase;
+}
+
+#spinner { 
+  x: 50%-25;
+  y: 50%-25; 
+  width: 50; 
+  height: 50; 
+  fill: white;
+}

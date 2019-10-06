@@ -1,0 +1,88 @@
+<svg id="root">
+  <gradientRect id="background" width="100%" height="100%"
+          gradient-type="linear"
+          gradient-x1="0" gradient-y1="50"
+          gradient-x2="0" gradient-y2="100%-50"
+          gradient-color1="#0084be" gradient-color2="#083a4f" />
+  <rect id="levelRect" >
+        <animate id="levelAnimate" attributeName="height" begin="enable" dur="2" />
+  </rect>
+  <text id="newAmount" class="add_text"
+        x="48%" y="15%+15"
+        fill="greenyellow" font-size="50" text-length="5"></text>
+  <text id="amount" class="add_text amount_text"
+        x="50%" y="50%+15"
+        font-size="60"></text>
+  <text id="typeName" class="add_text amount_text"
+        x="50%" y="68%+15"
+        font-size="30"></text>
+
+  <text id="stats-we" class="add_text amount_text"
+      x="43%" y="35%"
+      font-size="30"
+      text-length="100"></text>
+  <text id="stats-pu" class="add_text amount_text"
+      x="43%" y="55%"
+      font-size="30"
+      text-length="100"></text>
+  <text id="stats-pr" class="add_text amount_text"
+      x="43%" y="75%"
+      font-size="30"
+      text-length="100"></text>
+
+  <use id="spinner" href="#spinner" />
+  
+  <!--BUTTONS-->
+  <use id="plus" href="#combo-button-upper-right" fill="fb-white">
+    <set href="combo-button-icon" attributeName="href" to="images/sqr_btn_plus_p.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="images/sqr_btn_plus_p.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+  <use id="minus" href="#combo-button-lower-right" fill="fb-white">
+    <set href="combo-button-icon" attributeName="href" to="images/btn_combo_minus_p.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="images/btn_combo_minus_p.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+  <use id="save" href="#combo-button-lower-left" fill="fb-white">
+    <set href="combo-button-icon" attributeName="href" to="images/btn_combo_check_p.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="images/btn_combo_check_press_p.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+  <use id="plusPress" href="#combo-button-lower-right" fill="fb-white">
+    <set href="combo-button-icon" attributeName="href" to="images/btn_combo_down_p.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="images/btn_combo_down_press_p.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+  <use id="plusPull" href="#combo-button-lower-left" fill="fb-white">
+    <set href="combo-button-icon" attributeName="href" to="images/btn_combo_up_p.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="images/btn_combo_up_press_p.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+  <use id="plusWeight" href="#combo-button-upper-left" fill="fb-white">
+    <set href="combo-button-icon" attributeName="href" to="images/btn_combo_cog_p.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="images/btn_combo_cog_press_p.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+
+  <svg id="status" pointer-events="visible">
+    <rect width="100%" height="100%" fill="black">
+      <animate attributeName="opacity" begin="enable" to="1" dur=".5" />
+      <animate attributeName="opacity" begin="disable" to="0" dur=".5" />
+    </rect>
+    <g>
+      <rect width="100%-40" height="100%-40" x="20" y="20" fill="white" opacity="1"/>
+      <rect width="100%-50" height="100%-50" x="25" y="25" fill="blue" opacity="1"/>
+      <textarea width="100%-60" height="100%-60" x="30" y="30" id="text" class="status" fill="white">
+        A Status Message
+      </textarea>
+      <animateTransform attributeType="scale" begin="enable" easing="ease-out" to="1" dur=".25" />
+      <animateTransform attributeType="scale" begin="disable" easing="ease-in" to="0" dur=".25" />
+      <animateTransform attributeType="translate" to="0%,0%" easing="ease-out" begin="enable" dur=".25" />
+      <animateTransform attributeType="translate" to="50%,50%" easing="ease-in" begin="disable" dur=".25" />
+      <animate attributeName="opacity" easing="ease-in" begin="enable" to="1" dur=".25" />
+      <animate attributeName="opacity" easing="ease-out" begin="disable" to="0" dur=".25" />
+    </g>
+  </svg>
+</svg>
+
+
