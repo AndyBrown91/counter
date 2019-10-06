@@ -1,0 +1,33 @@
+{
+  "name": "counter",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.0",
+    "@fitbit/sdk-cli": "^1.6.0",
+    "fitbit-sdk-types": "^4.1.3"
+  },
+  "fitbit": {
+    "appUUID": "aec7d032-8dbf-4548-b18d-9e586e8f9d16",
+    "appType": "app",
+    "appDisplayName": "Counter",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [
+      "access_internet",
+      "run_background"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}
